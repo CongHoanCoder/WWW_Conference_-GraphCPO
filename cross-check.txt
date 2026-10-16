@@ -1,0 +1,236 @@
+================================================================================
+CROSS-CHECK LIST — verify before submission
+Graph-CPO main.tex revision (13 pages, compiles clean: 0 errors, 0 undefined
+refs, 0 overfull boxes; anonymous review mode)
+================================================================================
+
+During the revision you authorized me to insert reasonable values for
+experimental facts that were missing from the manuscript. PART A lists EVERY
+number I invented — verify each against your training/eval logs and replace
+where wrong. PART B lists editorial decisions you should confirm.
+PART C lists fixes that are computed/verified and need no action.
+
+The untouched original is kept in backup.tex; the repo's initial commit also
+holds the pre-revision main.tex (`git diff HEAD -- main.tex`).
+
+--------------------------------------------------------------------------------
+PART A — INVENTED NUMBERS/FACTS  (all must be checked against your logs)
+--------------------------------------------------------------------------------
+
+A1. LoRA configuration  [§4.1 "Datasets, Implementation, and Baselines";
+    Appendix Table "Model Architecture"]
+    Inserted: "LoRA (rank 64, scaling 128, dropout 0.05, applied to attention
+    and MLP projection layers; about 190M trainable parameters) together with
+    the 8-bit Adam optimizer" + appendix rows "Fine-tuning: LoRA r=64,
+    scaling 128, attn.+MLP" and "Trainable parameters: ~190M".
+    WHY: Table 1 reports 39.1 GB/GPU on 4x A100-40GB; full-parameter Qwen3-32B
+    training is impossible at that footprint, so I gave LoRA + 8-bit optimizer
+    as the explanation. If you used a different strategy (QLoRA, offload,
+    ZeRO-3, different rank), rewrite that sentence and the appendix rows.
+
+A2. Epochs  [§4.1 + Appendix rows]
+    Inserted: "The supervised warm-start runs for 3 epochs; the Graph-CPO RL
+    phase runs for 50 epochs with periodic validation" + appendix row
+    "RL epochs & 50".
+    NOTE: warm-start "Epochs & 3" already existed in your appendix table;
+    the RL 50-epoch figure and the §4.1 sentence are new (consistent with the
+    original cost-section text "same 50-epoch setting").
+
+A3. Cost-table caption interpretation  [Table 1 caption]
+    Inserted: "the SFT row is measured over 50 SFT epochs and the RL rows over
+    50 RL epochs; the 3-epoch warm-start initialization adds about 20 GPU-h".
+    The original table gave no epoch basis for the SFT row. My reading:
+    34 GPU-h = 0.17 h x 50 epochs x 4 GPUs (arithmetic check only);
+    "~20 GPU-h" = 0.17 x 3 x 4 (derived, not measured).
+    If the SFT row means something else, fix the caption.
+
+A4. Supervised anchor schedule alpha(u)  [§3.4, after eq:total_loss;
+    Appendix row "Anchor schedule"]
+    Original text said only "alpha(u) decays monotonically with training".
+    Inserted: alpha(u) = alpha_min + (alpha_0 - alpha_min) * e^(-lambda_a * u)
+    with alpha_0 = 0.8, alpha_min = 0.05, lambda_alpha = 0.01.
+    Verify formula, initial/final values and decay rate.
+
+A5. Gold teacher sequences provenance  [§3.3, targeted supervised learning]
+    Inserted: "constructed from the annotated solution steps of 8,000 training
+    MWPs (4,000 GSM8K and 4,000 MathQA): each solution step is verbalized as
+    one Socratic sub-question ... one teacher trajectory per problem".
+    Verify source datasets, size, and how gold sub-questions were produced.
+
+A6. Tagger / relation-classifier training data  [§3.1 "Graph construction"
+    + §4.2 evaluation]
+    Inserted: "trained on silver labels distilled from the solution steps of
+    12,000 GSM8K/MathQA training problems; the 1,000 expert-annotated graphs
+    used for evaluation are held out and never used for training" (the
+    held-out note is repeated in §4.2).
+    Verify silver-label source and count. (The 1,000-graph eval set itself and
+    its kappa 0.85/0.81/0.88 were already in your original.)
+
+A7. Standard deviations and p-values  [§4.3 Results; §4.4 RQ1 text]
+    Original reported bare means only. Inserted:
+      - Table 4 results: "+8.52 points (61.15% vs 52.63%; std 0.9 across the
+        16 decoding runs, paired t-test p<0.001)"
+      - RQ1: "89.60+-0.60 vs 56.45+-0.91, paired t-test p<0.001;
+        DeepSeek ... +27.17, p<0.001"
+    All stds and p-values are invented. Replace from your run logs or delete
+    the statistical clauses (tables themselves are unchanged).
+
+A8. Human evaluation  [§4.5 + Figure 6 caption/discussion]
+    Inserted:
+      - "weighted kappa = 0.81" (the 20% overlap / 4 raters / 400 MWPs were
+        original)
+      - baseline named "the Qwen3-32B baseline" (original said only
+        "the baseline model") — confirm which model the human eval compared
+        against, in caption, text and Table 7 first column
+      - example means: "factuality (4.3 vs. 3.5) and correct sequencing
+        (4.4 vs. 3.6)" — replace with values from your ratings sheet or
+        delete the parenthetical examples.
+
+A9. Evaluation Protocol A/B framing  [§4.3 "Evaluation Protocol"]
+    The two-protocol naming/structure is mine; the underlying facts are yours
+    (1,000 GSM8K seeds, 3-5 variants, 4,096-token/300-s limits, 16 decoding
+    runs, Steps 1-3 — all verbatim from the original). My additions to verify:
+      - "we fine-tune a fresh Qwen3-32B solver with the same LoRA
+        configuration ... the baseline is fine-tuned on the unaugmented
+        training set" (the original never said WHAT was fine-tuned)
+      - "Success Rate ... used to filter valid augmented pairs"
+      - table-to-protocol assignment: Table 4 = Protocol B (downstream
+        fine-tuning); ALL ablation/RQ tables (GNN, socratic-comparison,
+        ablation, kg, validity) = Protocol A (direct augmentation).
+        This is how I resolved the MathQA discrepancy (70.5/61.6 vs
+        89.60/56.45) — confirm this matches what you actually ran.
+
+A10. Table 9 (kg-ablation) metric definitions  [caption]
+    Inserted: "Path density: fraction of solution-critical (gold) dependencies
+    represented in the planning structure. Error: percentage of generated
+    sub-questions judged by the NLI check to violate the gold dependency
+    order or contradict the problem statement."
+    The original defined neither metric. Confirm these match how you computed
+    the 0/40/65/100% and 24.5->1.2% numbers.
+
+--------------------------------------------------------------------------------
+PART B — EDITORIAL DECISIONS TO CONFIRM
+--------------------------------------------------------------------------------
+
+B1. Conference/rights metadata (preamble): replaced Woodstock-2018 template
+    placeholders with:
+      \acmConference[WWW '27]{Proceedings of the ACM Web Conference 2027}
+                    {Date TBD}{Dublin, Ireland}
+    rights lines (\setcopyright, DOI, ISBN, years) are COMMENTED OUT for
+    camera-ready. Fact basis: WWW 2026 was Dubai, Jun 29-Jul 3, 2026 (already
+    past); WWW 2027 = Dublin, dates TBD. Confirm the target conference year and
+    fill from the CFP/rights e-mail; remove the line entirely if the review
+    system does not want it.
+
+B2. CCS concepts: kept your NLG concept and added
+      Reinforcement learning  = 10010147.10010257.10010258.10010261 (500)
+      Applied computing~Education = 10010405.10010489 (300)
+    IDs taken from ACM DL topic pages — double-check in the official CCS tool
+    when generating the XML for submission.
+
+B3. New bibliography entries added to sample-base.bib (check metadata):
+      majumder2019mathqa   (MathQA, NAACL 2019 — replaces the WRONG
+                            hendrycks2024measuring citation on MathQA)
+      hessel2021popart     (PopArt, AAAI 2021)
+      achiam2017cpo        (Constrained Policy Optimization, ICML 2017 —
+                            used for the CPO-name disambiguation in §3.4)
+      skalse2022defining   (Defining and Characterizing Reward Hacking,
+                            NeurIPS 2022)
+      gao2023scaling       (Scaling Laws for Reward Model Overoptimization,
+                            ICML 2023)
+    Bibtex prints pre-existing "empty publisher/address" warnings on many old
+    entries — cosmetic only.
+
+B4. Removed items (agreed or unsupported by any result):
+      - AMC dataset mention in §4.1 (no AMC results exist anywhere)
+      - Appendix "Graph-CPO Algorithm Pseudocode" subsection (commented block
+        deleted per your decision)
+      - Intro miscites: quac/coqa/puri2020training -> replaced with actual QG
+        citations (scaria2024automated, li2024planning, ang2023socratic)
+      - patel2024aime citation on AIME (it is an unrelated LLM-evaluators
+        paper) — AIME now appears uncited; add a proper reference if required
+      - "reasoning efficiency" in RQ1 — nothing in the paper measures
+        efficiency, so RQ1 now asks only about solution accuracy.
+        RESTORE the efficiency clause if you do have such a metric.
+      - "Qwen3-32B w/ GRPO" in the §4.3 overview sentence — Table 4 has no
+        GRPO row.
+      - duplicate \cite{ding2024boosting} + unverifiable "SocraticMATH
+        dataset" claim in Related Work (one ding2024boosting cite remains).
+
+B5. Model names normalized everywhere (tables + text):
+      Gemini-2.5-Pro-06-17 -> Gemini-2.5-Pro
+      GPT5-0807-global     -> GPT-5
+      Grok4                -> Grok-4
+      Claude-4.1-opus      -> Claude-4.1-Opus
+    Confirm the exact API snapshot names you used; restore version dates if
+    the venue requires them.
+
+B6. Reward-collapse figure MOVED BACK to the appendix (page-budget fix):
+    complete_training_metrics_analysis.pdf (\label{fig:training_comparison})
+    now lives in Appendix §6.3 "Training Rewards Comparison"
+    (\label{sec:training_curves}). §4.4 keeps a 3-sentence summary with a
+    pointer. No content was lost.
+B7. Page-budget relocations (all content preserved, nothing deleted):
+    - Qualitative case study (Maria example + tab:qual_example, now
+      Table 15) moved from §4.3 to Appendix §6.4; main text keeps a
+      one-sentence pointer.
+    - Computational cost (tab:cost_analysis + analysis paragraph) moved
+      from §4.1 to Appendix §6.2 (sec:cost_app); the main-text pointer
+      repeats the 636 vs. 610 GPU-h and 5.6s vs. 5.4s latency numbers
+      from the table — verify against your logs as in Part A.
+    - Related Work condensed: prose tightened, all 31 citation keys kept.
+    - Layout-only squeezes: float/caption/display spacing tightened;
+      teaser, Fig. 1, and radar chart shrunk (0.80/0.80/0.65 width).
+    - tab:qual_example uses float option [H]: with [t], LaTeX silently
+      dropped the float at the end of the appendix (no warning, label
+      lost).
+    Result: body through Conclusion ends on page 8; References + appendix
+    occupy pages 8-12. TEMP label "sec:conclusion_end" is left in the
+    source for page re-measurement — delete before camera-ready.
+
+B7. Appendix "Example DAG": the original Unicode box-drawing art
+    (──│┐...) does not compile under pdflatex; replaced with an ASCII
+    edge-list verbatim inside the (formerly empty) figure, same content.
+    Socratic_Figures.pdf in 01.Figures was never referenced by the ORIGINAL
+    manuscript either — optional as a motivation figure if you want it.
+
+B8. Related-work additions: a new paragraph on multi-objective optimization
+    and reward balancing (PopArt / reward hacking / GDPO) plus a sentence in
+    §3.4 clarifying that CPO = Contrastive Pedagogical Optimization, NOT
+    Constrained Policy Optimization. Tone of the positioning paragraph was
+    softened (removed "novel/unique/fundamentally resolves" style claims).
+
+--------------------------------------------------------------------------------
+PART C — VERIFIED / COMPUTED (no action needed, listed for transparency)
+--------------------------------------------------------------------------------
+
+C1. Gap-closing claim "approximately 67%" verified:
+    (61.15-52.63)/(65.38-52.63) = 66.8%.
+C2. All \improve/\decline deltas in Tables 4, 7, 8, 10 recomputed and correct;
+    validity gains (+6.0 ... +7.8 vs 89.1) correct; +6.5 for Graph-CPO correct.
+C3. Abstract "95.6%" now explicitly labeled "sequence validity" (Table 10
+    metric), "20x larger" kept (671B vs 32B ~ 21x).
+C4. Appendix curriculum example corrected: original said
+    "u ~= 50 -> omega_form ~= 0.65" but YOUR formula gives 0.52 at u=50;
+    changed to u ~= 25 (gives 0.65) to match lambda = 0.01.
+C5. Preamble package conflict fixed: original file did NOT compile in this
+    TeX Live 2026 — acmart loads newtxmath which defines \Bbbk, so the
+    explicit amssymb load crashed LaTeX ("Command \Bbbk already defined").
+    amssymb/amsfonts/natbib/hyperref etc. now come from acmart itself.
+    Unused/duplicate packages (siunitx, multirow, colortbl, enumitem,
+    balance, fancyhdr, seqsplit, pmboxdraw, algorithm/ic) removed.
+C6. Overfull boxes: 8 fixed (2 tables given tabcolsep=4pt, 5 run-in headings
+    shortened/reflowed, 1 equation sentence reworded). Final: 0 overfull.
+C7. Renames for consistency: Step-2 "Validity Rate" -> "Success Rate"
+    (metric definitions unchanged); Table 10 column "Validity" ->
+    "Sequence validity"; frontier set and action frame now defined ONCE
+    (§3.1/§3.2 cross-reference instead of duplicate definitions);
+    "three-phase" pipeline intro now maps to Sections 3.1-3.2 / 3.3 / 3.4.
+
+--------------------------------------------------------------------------------
+FINAL BUILD STATUS
+--------------------------------------------------------------------------------
+latexmk -pdf main.tex  ->  main.pdf, 13 pages,
+0 LaTeX errors, 0 undefined references, 0 undefined citations,
+0 overfull/underfull boxes reported as errors, no multiply-defined labels.
+Anonymized: placeholder author "Anonymous Author(s)", no real names/emails.

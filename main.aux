@@ -1,0 +1,205 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{kestin2025ai}
+\citation{ang2023socratic}
+\citation{scaria2024automated,li2024planning}
+\citation{shao2024deepseekmath,liu2026gdpo}
+\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Socratic questioning as a sequential decision process over an MWP: at each timestep the policy observes the problem, the previously asked sub-questions, and the current reasoning state, and targets the next unresolved reasoning dependency in the solution path.}}{1}{figure.caption.5}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:introduction}{{1}{1}{Socratic questioning as a sequential decision process over an MWP: at each timestep the policy observes the problem, the previously asked sub-questions, and the current reasoning state, and targets the next unresolved reasoning dependency in the solution path}{figure.caption.5}{}}
+\citation{wood1976role}
+\citation{wood1994patterns}
+\citation{ding2024boosting,xi2025investigating,adewumi2026findings}
+\citation{lei2025motivgraph}
+\citation{fakour2025socratic,stamatellos2025socratic}
+\citation{scaria2024automated,duong2024bloomllm}
+\citation{biancini2024multiple}
+\citation{li2024planning}
+\citation{mubarak2025quesgenie}
+\citation{al2024review}
+\citation{guan2023reinforcement,chen2019reinforcement,wang2020answer}
+\citation{lamsiyah2024fine}
+\citation{fahad2023reinforcement}
+\citation{piehl2025solving}
+\citation{cheng2025can}
+\citation{kang2025template}
+\citation{yang2025iterative}
+\citation{li2025step}
+\citation{zhang2024mathverse}
+\citation{huang2025foundation}
+\citation{shao2024deepseekmath}
+\citation{skalse2022defining,gao2023scaling}
+\citation{hessel2021popart}
+\citation{liu2026gdpo}
+\citation{gao2023scaling,skalse2022defining}
+\citation{shao2024deepseekmath}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Semantic Dependency Graph for Targeted Sub-Question Generation}{2}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:graph}{{3.1}{2}{Semantic Dependency Graph for Targeted Sub-Question Generation}{subsection.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overall processing pipeline of the proposed framework integrating Graph-CPO. It utilizes the Semantic Dependency Graph to identify the reasoning frontier for targeted question generation. Then, a warm-start strategy is set for reinforcement learning via targeted supervised learning. Subsequently, Graph-CPO optimizes sub-question generation via adaptive reward modeling and curriculum-based learning.}}{3}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:teaser}{{2}{3}{Overall processing pipeline of the proposed framework integrating Graph-CPO. It utilizes the Semantic Dependency Graph to identify the reasoning frontier for targeted question generation. Then, a warm-start strategy is set for reinforcement learning via targeted supervised learning. Subsequently, Graph-CPO optimizes sub-question generation via adaptive reward modeling and curriculum-based learning}{figure.caption.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Schema of the Semantic Dependency Graph.}}{3}{table.caption.7}\protected@file@percent }
+\newlabel{tab:sdg_schema}{{1}{3}{Schema of the Semantic Dependency Graph}{table.caption.7}{}}
+\@writefile{toc}{\contentsline {paragraph}{Graph construction.}{3}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Frontier tracking and node resolution.}{3}{section*.9}\protected@file@percent }
+\newlabel{eq:frontier}{{1}{3}{Frontier tracking and node resolution}{equation.1}{}}
+\citation{cobbe2021training}
+\citation{shao2024deepseekmath}
+\citation{achiam2017cpo}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Graph-to-Question Planning}{4}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:g2q}{{3.2}{4}{Graph-to-Question Planning}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Frontier node selection.}{4}{section*.10}\protected@file@percent }
+\newlabel{eq:node_selection}{{2}{4}{Frontier node selection}{equation.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Pedagogical action frame.}{4}{section*.11}\protected@file@percent }
+\newlabel{eq:action_frame}{{3}{4}{Pedagogical action frame}{equation.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Generator input.}{4}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Binding questions to graph targets.}{4}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Warm-start Policy Initialization with Targeted Supervised Learning}{4}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:init}{{3.3}{4}{Warm-start Policy Initialization with Targeted Supervised Learning}{subsection.3.3}{}}
+\newlabel{eq:lqg}{{7}{4}{Warm-start Policy Initialization with Targeted Supervised Learning}{equation.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Graph-CPO: Graph-Grounded Contrastive Pedagogical Optimization}{4}{subsection.3.4}\protected@file@percent }
+\newlabel{sec:cpo}{{3.4}{4}{Graph-CPO: Graph-Grounded Contrastive Pedagogical Optimization}{subsection.3.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Graph-conditioned supervised anchor.}{4}{section*.14}\protected@file@percent }
+\newlabel{eq:lqgt}{{8}{4}{Graph-conditioned supervised anchor}{equation.8}{}}
+\citation{schulman2017proximal,shao2024deepseekmath}
+\citation{cobbe2021training}
+\citation{majumder2019mathqa}
+\citation{he2024olympiadbench}
+\citation{ang2023socratic}
+\citation{duong2024bloomllm}
+\citation{scaria2024automated}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Pedagogical role of the three reward dimensions.}}{5}{table.caption.16}\protected@file@percent }
+\newlabel{tab:reward_role}{{2}{5}{Pedagogical role of the three reward dimensions}{table.caption.16}{}}
+\@writefile{toc}{\contentsline {paragraph}{Reward modeling.}{5}{section*.15}\protected@file@percent }
+\newlabel{eq:rel_reward}{{9}{5}{Reward modeling}{equation.9}{}}
+\newlabel{eq:coh_reward}{{11}{5}{Reward modeling}{equation.11}{}}
+\@writefile{toc}{\contentsline {paragraph}{Decoupled adaptive advantage.}{5}{section*.17}\protected@file@percent }
+\newlabel{eq:composite_advantage}{{14}{5}{Decoupled adaptive advantage}{equation.14}{}}
+\newlabel{eq:weights}{{15}{5}{Decoupled adaptive advantage}{equation.15}{}}
+\@writefile{toc}{\contentsline {paragraph}{Graph-CPO objective.}{5}{section*.18}\protected@file@percent }
+\newlabel{eq:graph_cpo_loss}{{17}{5}{Graph-CPO objective}{equation.17}{}}
+\@writefile{toc}{\contentsline {paragraph}{Overall objective.}{5}{section*.19}\protected@file@percent }
+\newlabel{eq:total_loss}{{18}{5}{Overall objective}{equation.18}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments and Results}{5}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Experiment Setups}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.1}Datasets, Implementation, and Baselines}{5}{subsubsection.4.1.1}\protected@file@percent }
+\newlabel{sec:cost}{{4.1.2}{5}{Computational Cost}{subsubsection.4.1.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.1.2}Computational Cost}{5}{subsubsection.4.1.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Evaluation}{6}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:sdg_eval}{{4.2.1}{6}{Semantic Dependency Graph Construction Quality}{subsubsection.4.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Semantic Dependency Graph Construction Quality}{6}{subsubsection.4.2.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Semantic Dependency Graph Construction Performance.}}{6}{table.caption.20}\protected@file@percent }
+\newlabel{tab:pipeline_performance}{{3}{6}{Semantic Dependency Graph Construction Performance}{table.caption.20}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}GNN and Graph Representation}{6}{subsubsection.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}\textbf  {Overall performance}}{6}{table.caption.22}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Ablation of graph representation and GNN encoder on MathQA (Protocol A: direct augmentation).}}{6}{table.caption.21}\protected@file@percent }
+\newlabel{tab:gnn_ablation}{{4}{6}{Ablation of graph representation and GNN encoder on MathQA (Protocol A: direct augmentation)}{table.caption.21}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Comparison under Protocol B (downstream fine-tuning). Superscripts denote point changes vs.\ the Qwen3-32B generator baseline. Non-Qwen3-32B generators are included for reference and may reflect both generator design and backbone.}}{7}{table.caption.22}\protected@file@percent }
+\newlabel{tab:benchmark-comparison-detailed}{{5}{7}{Comparison under Protocol B (downstream fine-tuning). Superscripts denote point changes vs.\ the Qwen3-32B generator baseline. Non-Qwen3-32B generators are included for reference and may reflect both generator design and backbone}{table.caption.22}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces MathQA accuracy (\%) with and without Graph-CPO sub-questions (Protocol A). Superscripts denote the absolute gain from adding sub-questions.}}{7}{table.caption.23}\protected@file@percent }
+\newlabel{tab:socratic-comparison}{{6}{7}{MathQA accuracy (\%) with and without Graph-CPO sub-questions (Protocol A). Superscripts denote the absolute gain from adding sub-questions}{table.caption.23}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}\textbf  {RQ1: Does incorporating Socratic sub-questions improve solution accuracy in math word problems?}}{7}{subsubsection.4.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.5}\textbf  {RQ2: Which structural and sequential properties are essential for effective Socratic questioning under a decision-theoretic framework?}}{7}{subsubsection.4.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Targeted question generation.}{7}{section*.25}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Controlled ablations of Socratic sub-questions on MathQA (Protocol A). $\{q\}^k$ uses a random fraction $k$ of the sub-questions; shuffle($\{q\}$) permutes question order; $\langle $base-ques$\rangle $ uses untuned Qwen3-32B questions. Red markers denote drops relative to the full set $\{q\}^1$.}}{7}{table.caption.24}\protected@file@percent }
+\newlabel{tab:socratic-ablation-study}{{7}{7}{Controlled ablations of Socratic sub-questions on MathQA (Protocol A). $\{q\}^k$ uses a random fraction $k$ of the sub-questions; shuffle($\{q\}$) permutes question order; $\langle $base-ques$\rangle $ uses untuned Qwen3-32B questions. Red markers denote drops relative to the full set $\{q\}^1$}{table.caption.24}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Effect of graph structure on reasoning quality and MathQA accuracy (Protocol A). Path density: fraction of solution-critical (gold) dependencies represented in the planning structure. Error: percentage of generated sub-questions judged by the NLI check to violate the gold dependency order or contradict the problem statement.}}{7}{table.caption.26}\protected@file@percent }
+\newlabel{tab:kg-ablation}{{8}{7}{Effect of graph structure on reasoning quality and MathQA accuracy (Protocol A). Path density: fraction of solution-critical (gold) dependencies represented in the planning structure. Error: percentage of generated sub-questions judged by the NLI check to violate the gold dependency order or contradict the problem statement}{table.caption.26}{}}
+\@writefile{toc}{\contentsline {paragraph}{Purpose orientation.}{7}{section*.27}\protected@file@percent }
+\bibstyle{ACM-Reference-Format}
+\bibdata{sample-base}
+\bibcite{achiam2017cpo}{{1}{2017}{{Achiam et~al\mbox  {.}}}{{}}}
+\bibcite{adewumi2026findings}{{2}{2026}{{Adewumi et~al\mbox  {.}}}{{}}}
+\bibcite{al2024review}{{3}{2024}{{Al~Faraby et~al\mbox  {.}}}{{}}}
+\bibcite{ang2023socratic}{{4}{2023}{{Ang et~al\mbox  {.}}}{{}}}
+\bibcite{biancini2024multiple}{{5}{2024}{{Biancini et~al\mbox  {.}}}{{}}}
+\bibcite{chen2019reinforcement}{{6}{2019}{{Chen et~al\mbox  {.}}}{{}}}
+\bibcite{cheng2025can}{{7}{2025}{{Cheng et~al\mbox  {.}}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Generator sequence validity rates (\%).}}{8}{table.caption.28}\protected@file@percent }
+\newlabel{tab:generator-validity}{{9}{8}{Generator sequence validity rates (\%)}{table.caption.28}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.6}Training Dynamics: Preventing Reward Collapse}{8}{subsubsection.4.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Human Quality Evaluation}{8}{subsection.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Human evaluation of generated sub-questions: Graph-CPO vs.\ the Qwen3-32B baseline, showing mean and standard deviation over 400 MWPs rated by four raters.}}{8}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:comparison_}{{3}{8}{Human evaluation of generated sub-questions: Graph-CPO vs.\ the Qwen3-32B baseline, showing mean and standard deviation over 400 MWPs rated by four raters}{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {paragraph}{Ethical considerations.}{8}{section*.30}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}\protected@file@percent }
+\newlabel{sec:conclusion_end}{{5}{8}{Conclusion}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{References}{8}{section*.32}\protected@file@percent }
+\bibcite{cobbe2021training}{{8}{2021}{{Cobbe et~al\mbox  {.}}}{{}}}
+\bibcite{ding2024boosting}{{9}{2024}{{Ding et~al\mbox  {.}}}{{}}}
+\bibcite{duong2024bloomllm}{{10}{2024}{{Duong-Trung et~al\mbox  {.}}}{{}}}
+\bibcite{fahad2023reinforcement}{{11}{2023}{{Fahad~Mon et~al\mbox  {.}}}{{}}}
+\bibcite{fakour2025socratic}{{12}{2025}{{Fakour and Imani}}{{}}}
+\bibcite{gao2023scaling}{{13}{2023}{{Gao et~al\mbox  {.}}}{{}}}
+\bibcite{guan2023reinforcement}{{14}{2023}{{Guan et~al\mbox  {.}}}{{}}}
+\bibcite{he2024olympiadbench}{{15}{2024}{{He et~al\mbox  {.}}}{{}}}
+\bibcite{hessel2021popart}{{16}{2021}{{Hessel et~al\mbox  {.}}}{{}}}
+\bibcite{huang2025foundation}{{17}{2025}{{Huang et~al\mbox  {.}}}{{}}}
+\bibcite{kang2025template}{{18}{2025}{{Kang et~al\mbox  {.}}}{{}}}
+\bibcite{kestin2025ai}{{19}{2025}{{Kestin et~al\mbox  {.}}}{{}}}
+\bibcite{lamsiyah2024fine}{{20}{2024}{{Lamsiyah et~al\mbox  {.}}}{{}}}
+\bibcite{lei2025motivgraph}{{21}{2025}{{Lei et~al\mbox  {.}}}{{}}}
+\bibcite{li2024planning}{{22}{2024}{{Li and Zhang}}{{}}}
+\bibcite{li2025step}{{23}{2025}{{Li et~al\mbox  {.}}}{{}}}
+\bibcite{liu2026gdpo}{{24}{2026}{{Liu et~al\mbox  {.}}}{{}}}
+\bibcite{majumder2019mathqa}{{25}{2019}{{Majumder et~al\mbox  {.}}}{{}}}
+\bibcite{mubarak2025quesgenie}{{26}{2025}{{Mubarak et~al\mbox  {.}}}{{}}}
+\bibcite{piehl2025solving}{{27}{2025}{{Piehl et~al\mbox  {.}}}{{}}}
+\bibcite{scaria2024automated}{{28}{2024}{{Scaria et~al\mbox  {.}}}{{}}}
+\bibcite{schulman2017proximal}{{29}{2017}{{Schulman et~al\mbox  {.}}}{{}}}
+\bibcite{shao2024deepseekmath}{{30}{2024}{{Shao et~al\mbox  {.}}}{{}}}
+\bibcite{skalse2022defining}{{31}{2022}{{Skalse et~al\mbox  {.}}}{{}}}
+\bibcite{stamatellos2025socratic}{{32}{2025}{{Stamatellos}}{{}}}
+\bibcite{wang2020answer}{{33}{2020}{{Wang et~al\mbox  {.}}}{{}}}
+\bibcite{wood1976role}{{34}{1976}{{Wood et~al\mbox  {.}}}{{}}}
+\bibcite{wood1994patterns}{{35}{1994}{{Wood}}{{}}}
+\bibcite{xi2025investigating}{{36}{2025}{{Xi et~al\mbox  {.}}}{{}}}
+\bibcite{yang2025iterative}{{37}{2025}{{Yang et~al\mbox  {.}}}{{}}}
+\bibcite{zhang2024mathverse}{{38}{2024}{{Zhang et~al\mbox  {.}}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Computational cost comparison. GPU-h is total training cost on 4 A100-40GB GPUs: the SFT row is measured over 50 SFT epochs and the RL rows over 50 RL epochs; the 3-epoch warm-start initialization adds about 20 GPU-h. Lat. denotes average generation time per problem.}}{10}{table.caption.34}\protected@file@percent }
+\newlabel{tab:cost_analysis}{{11}{10}{Computational cost comparison. GPU-h is total training cost on 4 A100-40GB GPUs: the SFT row is measured over 50 SFT epochs and the RL rows over 50 RL epochs; the 3-epoch warm-start initialization adds about 20 GPU-h. Lat. denotes average generation time per problem}{table.caption.34}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Appendix}{10}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Training Hyperparameters}{10}{subsection.6.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Graph-CPO training hyperparameters.}}{10}{table.caption.33}\protected@file@percent }
+\newlabel{tab:hyperparams}{{10}{10}{Graph-CPO training hyperparameters}{table.caption.33}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Computational Cost Analysis}{10}{subsection.6.2}\protected@file@percent }
+\newlabel{sec:cost_app}{{6.2}{10}{Computational Cost Analysis}{subsection.6.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Ablation of Graph-CPO reward dimensions on MathQA. DW denotes dynamic reward weighting. All variants use the same Qwen3-32B backbone and graph-conditioned action frames.}}{10}{table.caption.36}\protected@file@percent }
+\newlabel{tab:reward_ablation}{{12}{10}{Ablation of Graph-CPO reward dimensions on MathQA. DW denotes dynamic reward weighting. All variants use the same Qwen3-32B backbone and graph-conditioned action frames}{table.caption.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Training Rewards Comparison}{10}{subsection.6.3}\protected@file@percent }
+\newlabel{sec:training_curves}{{6.3}{10}{Training Rewards Comparison}{subsection.6.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Training behavior of GRPO and Graph-CPO across Contrastive Relevance, Format Adherence, and Logical Coherence rewards on Qwen3-32B.}}{11}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:training_comparison}{{4}{11}{Training behavior of GRPO and Graph-CPO across Contrastive Relevance, Format Adherence, and Logical Coherence rewards on Qwen3-32B}{figure.caption.35}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}End-to-End Example: From Problem to Socratic Questions}{11}{subsection.6.4}\protected@file@percent }
+\newlabel{app:example}{{6.4}{11}{End-to-End Example: From Problem to Socratic Questions}{subsection.6.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.1}Input Problem}{11}{subsubsection.6.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.2}Phase 1: Graph Construction}{11}{subsubsection.6.4.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Semantic Dependency Graph of the running example expressed as prerequisite edges (prerequisite $\rightarrow $ dependent).}}{11}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:example_dag}{{5}{11}{Semantic Dependency Graph of the running example expressed as prerequisite edges (prerequisite $\rightarrow $ dependent)}{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3}Phase 2: Warm-Start Initialization}{11}{subsubsection.6.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4}Phase 3: Graph-CPO Sequential Generation}{11}{subsubsection.6.4.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Key mechanisms:}{11}{section*.39}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.5}Comparison with Baseline Methods}{11}{table.caption.40}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Qualitative comparison with the baseline.}{11}{section*.41}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Qualitative comparison of generated Socratic sub-questions.}}{11}{table.caption.42}\protected@file@percent }
+\newlabel{tab:qual_example}{{15}{11}{Qualitative comparison of generated Socratic sub-questions}{table.caption.42}{}}
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{4.185pt}
+\newlabel{tocindent2}{10.34999pt}
+\newlabel{tocindent3}{16.51498pt}
+\newlabel{tocindent4}{0pt}
+\newlabel{tocindent5}{0pt}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Graph-CPO generation trace showing frontier evolution and targeted questions.}}{12}{table.caption.38}\protected@file@percent }
+\newlabel{tab:example_generation}{{13}{12}{Graph-CPO generation trace showing frontier evolution and targeted questions}{table.caption.38}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Question sequences generated by different methods for the same problem.}}{12}{table.caption.40}\protected@file@percent }
+\newlabel{tab:example_comparison}{{14}{12}{Question sequences generated by different methods for the same problem}{table.caption.40}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.6}Reward Dynamics During Training}{12}{subsubsection.6.4.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Limitations}{12}{section.7}\protected@file@percent }
+\newlabel{TotPages}{{12}{12}{}{page.12}{}}
+\gdef \@abspage@last{12}

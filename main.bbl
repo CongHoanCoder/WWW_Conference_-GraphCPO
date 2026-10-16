@@ -1,0 +1,516 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{38}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Achiam et~al\mbox{.}(2017)]%
+        {achiam2017cpo}
+\bibfield{author}{\bibinfo{person}{Joshua Achiam}, \bibinfo{person}{David
+  Held}, \bibinfo{person}{Aviv Tamar}, {and} \bibinfo{person}{Pieter Abbeel}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Constrained policy optimization}. In
+  \bibinfo{booktitle}{\emph{International Conference on Machine Learning}}.
+  PMLR, \bibinfo{pages}{22--31}.
+\newblock
+
+
+\bibitem[Adewumi et~al\mbox{.}(2026)]%
+        {adewumi2026findings}
+\bibfield{author}{\bibinfo{person}{Tosin Adewumi},
+  \bibinfo{person}{Foteini~Simistira Liwicki}, \bibinfo{person}{Marcus
+  Liwicki}, \bibinfo{person}{Viktor Gardelli}, \bibinfo{person}{Lama Alkhaled},
+  {and} \bibinfo{person}{Hamam Mokayed}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Findings of Mega: Math explanation with LLMs using
+  the socratic method for active learning}.
+\newblock \bibinfo{journal}{\emph{IEEE Signal Processing Magazine}}
+  \bibinfo{volume}{42}, \bibinfo{number}{6} (\bibinfo{year}{2026}),
+  \bibinfo{pages}{77--94}.
+\newblock
+
+
+\bibitem[Al~Faraby et~al\mbox{.}(2024)]%
+        {al2024review}
+\bibfield{author}{\bibinfo{person}{Said Al~Faraby}, \bibinfo{person}{Adiwijaya
+  Adiwijaya}, {and} \bibinfo{person}{Ade Romadhony}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Review on neural question generation for education
+  purposes}.
+\newblock \bibinfo{journal}{\emph{International Journal of Artificial
+  Intelligence in Education}} \bibinfo{volume}{34}, \bibinfo{number}{3}
+  (\bibinfo{year}{2024}), \bibinfo{pages}{1008--1045}.
+\newblock
+
+
+\bibitem[Ang et~al\mbox{.}(2023)]%
+        {ang2023socratic}
+\bibfield{author}{\bibinfo{person}{Beng~Heng Ang}, \bibinfo{person}{Sujatha~Das
+  Gollapalli}, {and} \bibinfo{person}{See~Kiong Ng}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Socratic question generation: A novel dataset,
+  models, and evaluation}. In \bibinfo{booktitle}{\emph{Proceedings of the 17th
+  Conference of the European Chapter of the Association for Computational
+  Linguistics}}. \bibinfo{pages}{147--165}.
+\newblock
+
+
+\bibitem[Biancini et~al\mbox{.}(2024)]%
+        {biancini2024multiple}
+\bibfield{author}{\bibinfo{person}{Giorgio Biancini}, \bibinfo{person}{Alessio
+  Ferrato}, {and} \bibinfo{person}{Carla Limongelli}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Multiple-choice question generation using large
+  language models: Methodology and educator insights}. In
+  \bibinfo{booktitle}{\emph{Adjunct Proceedings of the 32nd ACM Conference on
+  User Modeling, Adaptation and Personalization}}. \bibinfo{pages}{584--590}.
+\newblock
+
+
+\bibitem[Chen et~al\mbox{.}(2019)]%
+        {chen2019reinforcement}
+\bibfield{author}{\bibinfo{person}{Yu Chen}, \bibinfo{person}{Lingfei Wu},
+  {and} \bibinfo{person}{Mohammed~J Zaki}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Reinforcement learning based graph-to-sequence
+  model for natural question generation}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1908.04942}}
+  (\bibinfo{year}{2019}).
+\newblock
+
+
+\bibitem[Cheng et~al\mbox{.}(2025)]%
+        {cheng2025can}
+\bibfield{author}{\bibinfo{person}{Ziling Cheng}, \bibinfo{person}{Meng Cao},
+  \bibinfo{person}{Leila Pishdad}, \bibinfo{person}{Yanshuai Cao}, {and}
+  \bibinfo{person}{Jackie~CK Cheung}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Can llms reason abstractly over math word problems
+  without cot? disentangling abstract formulation from arithmetic computation}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the 2025 Conference on Empirical
+  Methods in Natural Language Processing}}. \bibinfo{pages}{14317--14344}.
+\newblock
+
+
+\bibitem[Cobbe et~al\mbox{.}(2021)]%
+        {cobbe2021training}
+\bibfield{author}{\bibinfo{person}{Karl Cobbe}, \bibinfo{person}{Vineet
+  Kosaraju}, \bibinfo{person}{Mohammad Bavarian}, \bibinfo{person}{Mark Chen},
+  \bibinfo{person}{Heewoo Jun}, \bibinfo{person}{Lukasz Kaiser},
+  \bibinfo{person}{Matthias Plappert}, \bibinfo{person}{Jerry Tworek},
+  \bibinfo{person}{Jacob Hilton}, \bibinfo{person}{Reiichiro Nakano},
+  {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Training verifiers to solve math word problems}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2110.14168}}
+  (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[Ding et~al\mbox{.}(2024)]%
+        {ding2024boosting}
+\bibfield{author}{\bibinfo{person}{Yuyang Ding}, \bibinfo{person}{Hanglei Hu},
+  \bibinfo{person}{Jie Zhou}, \bibinfo{person}{Qin Chen}, \bibinfo{person}{Bo
+  Jiang}, {and} \bibinfo{person}{Liang He}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Boosting large language models with socratic method
+  for conversational mathematics teaching}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 33rd ACM International
+  Conference on Information and Knowledge Management}}.
+  \bibinfo{pages}{3730--3735}.
+\newblock
+
+
+\bibitem[Duong-Trung et~al\mbox{.}(2024)]%
+        {duong2024bloomllm}
+\bibfield{author}{\bibinfo{person}{Nghia Duong-Trung}, \bibinfo{person}{Xia
+  Wang}, {and} \bibinfo{person}{Milo{\v{s}} Krav{\v{c}}{\'\i}k}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Bloomllm: Large language models based question
+  generation combining supervised fine-tuning and bloom’s taxonomy}. In
+  \bibinfo{booktitle}{\emph{European Conference on Technology Enhanced
+  Learning}}. Springer, \bibinfo{pages}{93--98}.
+\newblock
+
+
+\bibitem[Fahad~Mon et~al\mbox{.}(2023)]%
+        {fahad2023reinforcement}
+\bibfield{author}{\bibinfo{person}{Bisni Fahad~Mon}, \bibinfo{person}{Asma
+  Wasfi}, \bibinfo{person}{Mohammad Hayajneh}, \bibinfo{person}{Ahmad Slim},
+  {and} \bibinfo{person}{Najah Abu~Ali}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Reinforcement learning in education: A literature
+  review}. In \bibinfo{booktitle}{\emph{Informatics}},
+  Vol.~\bibinfo{volume}{10}. MDPI, \bibinfo{pages}{74}.
+\newblock
+
+
+\bibitem[Fakour and Imani(2025)]%
+        {fakour2025socratic}
+\bibfield{author}{\bibinfo{person}{Hoda Fakour} {and} \bibinfo{person}{Moslem
+  Imani}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Socratic wisdom in the age of AI: a comparative
+  study of ChatGPT and human tutors in enhancing critical thinking skills}. In
+  \bibinfo{booktitle}{\emph{Frontiers in Education}},
+  Vol.~\bibinfo{volume}{10}. Frontiers Media SA, \bibinfo{pages}{1528603}.
+\newblock
+
+
+\bibitem[Gao et~al\mbox{.}(2023)]%
+        {gao2023scaling}
+\bibfield{author}{\bibinfo{person}{Leo Gao}, \bibinfo{person}{John Schulman},
+  {and} \bibinfo{person}{John Hilton}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Scaling laws for reward model overoptimization}. In
+  \bibinfo{booktitle}{\emph{International Conference on Machine Learning}}.
+  PMLR, \bibinfo{pages}{9008--9031}.
+\newblock
+
+
+\bibitem[Guan et~al\mbox{.}(2023)]%
+        {guan2023reinforcement}
+\bibfield{author}{\bibinfo{person}{Menghong Guan},
+  \bibinfo{person}{Subrota~Kumar Mondal}, \bibinfo{person}{Hong-Ning Dai},
+  {and} \bibinfo{person}{Haiyong Bao}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Reinforcement learning-driven deep question
+  generation with rich semantics}.
+\newblock \bibinfo{journal}{\emph{Information Processing \& Management}}
+  \bibinfo{volume}{60}, \bibinfo{number}{2} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{103232}.
+\newblock
+
+
+\bibitem[He et~al\mbox{.}(2024)]%
+        {he2024olympiadbench}
+\bibfield{author}{\bibinfo{person}{Chaoqun He}, \bibinfo{person}{Renjie Luo},
+  \bibinfo{person}{Yuzhuo Bai}, \bibinfo{person}{Shengding Hu},
+  \bibinfo{person}{Zhen Thai}, \bibinfo{person}{Junhao Shen},
+  \bibinfo{person}{Jinyi Hu}, \bibinfo{person}{Xu Han}, \bibinfo{person}{Yujie
+  Huang}, \bibinfo{person}{Yuxiang Zhang}, {et~al\mbox{.}}}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Olympiadbench: A challenging benchmark for
+  promoting agi with olympiad-level bilingual multimodal scientific problems}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the 62nd Annual Meeting of the
+  Association for Computational Linguistics (Volume 1: Long Papers)}}.
+  \bibinfo{pages}{3828--3850}.
+\newblock
+
+
+\bibitem[Hessel et~al\mbox{.}(2021)]%
+        {hessel2021popart}
+\bibfield{author}{\bibinfo{person}{Matteo Hessel}, \bibinfo{person}{Joseph
+  Modayil}, \bibinfo{person}{Hado van Hasselt}, \bibinfo{person}{Tom Schaul},
+  \bibinfo{person}{Georg Ostrovski}, \bibinfo{person}{Will Dabney},
+  \bibinfo{person}{Dan Horgan}, \bibinfo{person}{Bilal Piot},
+  \bibinfo{person}{Mohammad Azar}, {and} \bibinfo{person}{David Silver}.}
+  \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Popart: Adaptive value function estimation in deep
+  reinforcement learning}. In \bibinfo{booktitle}{\emph{Proceedings of the AAAI
+  Conference on Artificial Intelligence}}, Vol.~\bibinfo{volume}{35}.
+  \bibinfo{pages}{8465--8474}.
+\newblock
+
+
+\bibitem[Huang et~al\mbox{.}(2025)]%
+        {huang2025foundation}
+\bibfield{author}{\bibinfo{person}{Zhenya Huang}, \bibinfo{person}{Jiayu Liu},
+  \bibinfo{person}{Xin Lin}, \bibinfo{person}{Zhiyuan Ma},
+  \bibinfo{person}{Shangzi Xue}, \bibinfo{person}{Tong Xiao},
+  \bibinfo{person}{Qi Liu}, \bibinfo{person}{Yee~Whye Teh}, {and}
+  \bibinfo{person}{Enhong Chen}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Foundation of Intelligence: Review of Math Word
+  Problems from Human Cognition Perspective}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2510.21999}}
+  (\bibinfo{year}{2025}).
+\newblock
+
+
+\bibitem[Kang et~al\mbox{.}(2025)]%
+        {kang2025template}
+\bibfield{author}{\bibinfo{person}{Xiaoqiang Kang}, \bibinfo{person}{Zimu
+  Wang}, \bibinfo{person}{Xiaobo Jin}, \bibinfo{person}{Wei Wang},
+  \bibinfo{person}{Kaizhu Huang}, {and} \bibinfo{person}{Qiufeng Wang}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Template-driven llm-paraphrased framework for
+  tabular math word problem generation}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}}, Vol.~\bibinfo{volume}{39}. \bibinfo{pages}{24303--24311}.
+\newblock
+
+
+\bibitem[Kestin et~al\mbox{.}(2025)]%
+        {kestin2025ai}
+\bibfield{author}{\bibinfo{person}{Greg Kestin}, \bibinfo{person}{Kelly
+  Miller}, \bibinfo{person}{Anna Klales}, \bibinfo{person}{Timothy Milbourne},
+  {and} \bibinfo{person}{Gregorio Ponti}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{AI tutoring outperforms in-class active learning:
+  an RCT introducing a novel research-based design in an authentic educational
+  setting}.
+\newblock \bibinfo{journal}{\emph{Scientific Reports}} \bibinfo{volume}{15},
+  \bibinfo{number}{1} (\bibinfo{year}{2025}), \bibinfo{pages}{17458}.
+\newblock
+
+
+\bibitem[Lamsiyah et~al\mbox{.}(2024)]%
+        {lamsiyah2024fine}
+\bibfield{author}{\bibinfo{person}{Salima Lamsiyah},
+  \bibinfo{person}{Abdelkader El~Mahdaouy}, \bibinfo{person}{Aria Nourbakhsh},
+  {and} \bibinfo{person}{Christoph Schommer}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Fine-tuning a large language model with
+  reinforcement learning for educational question generation}. In
+  \bibinfo{booktitle}{\emph{International Conference on Artificial Intelligence
+  in Education}}. Springer, \bibinfo{pages}{424--438}.
+\newblock
+
+
+\bibitem[Lei et~al\mbox{.}(2025)]%
+        {lei2025motivgraph}
+\bibfield{author}{\bibinfo{person}{Xinping Lei}, \bibinfo{person}{Tong Zhou},
+  \bibinfo{person}{Yubo Chen}, \bibinfo{person}{Kang Liu}, {and}
+  \bibinfo{person}{Jun Zhao}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Motivgraph-soiq: Integrating motivational knowledge
+  graphs and socratic dialogue for enhanced llm ideation}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2509.21978}}
+  (\bibinfo{year}{2025}).
+\newblock
+
+
+\bibitem[Li and Zhang(2024)]%
+        {li2024planning}
+\bibfield{author}{\bibinfo{person}{Kunze Li} {and} \bibinfo{person}{Yu Zhang}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Planning first, question second: An LLM-guided
+  method for controllable question generation}. In
+  \bibinfo{booktitle}{\emph{Findings of the Association for Computational
+  Linguistics: ACL 2024}}. \bibinfo{pages}{4715--4729}.
+\newblock
+
+
+\bibitem[Li et~al\mbox{.}(2025)]%
+        {li2025step}
+\bibfield{author}{\bibinfo{person}{Yiyao Li},
+  \bibinfo{person}{Dhanish~Musharraf Ubaidali}, \bibinfo{person}{Lu Wang},
+  {and} \bibinfo{person}{Wenyu Zhang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Step-by-step correction of llm-based math word
+  problems solutions}. In \bibinfo{booktitle}{\emph{ICASSP 2025-2025 IEEE
+  International Conference on Acoustics, Speech and Signal Processing
+  (ICASSP)}}. IEEE, \bibinfo{pages}{1--5}.
+\newblock
+
+
+\bibitem[Liu et~al\mbox{.}(2026)]%
+        {liu2026gdpo}
+\bibfield{author}{\bibinfo{person}{Shih-Yang Liu}, \bibinfo{person}{Xin Dong},
+  \bibinfo{person}{Ximing Lu}, \bibinfo{person}{Shizhe Diao},
+  \bibinfo{person}{Peter Belcak}, \bibinfo{person}{Mingjie Liu},
+  \bibinfo{person}{Min-Hung Chen}, \bibinfo{person}{Hongxu Yin},
+  \bibinfo{person}{Yu-Chiang~Frank Wang}, \bibinfo{person}{Kwang-Ting Cheng},
+  {et~al\mbox{.}}} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{Gdpo: Group reward-decoupled normalization policy
+  optimization for multi-reward rl optimization}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2601.05242}}
+  (\bibinfo{year}{2026}).
+\newblock
+
+
+\bibitem[Majumder et~al\mbox{.}(2019)]%
+        {majumder2019mathqa}
+\bibfield{author}{\bibinfo{person}{Rikteshwar Majumder},
+  \bibinfo{person}{Deepak Sanyal}, \bibinfo{person}{Paban~Kumar Patra}, {and}
+  \bibinfo{person}{Purnendu Ganguly}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Mathqa: Towards interpretable math word problem
+  solving with operation-based formalisms}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2019 Conference of the North
+  American Chapter of the Association for Computational Linguistics: Human
+  Language Technologies, Volume 1 (Long and Short Papers)}}.
+  \bibinfo{pages}{2357--2367}.
+\newblock
+
+
+\bibitem[Mubarak et~al\mbox{.}(2025)]%
+        {mubarak2025quesgenie}
+\bibfield{author}{\bibinfo{person}{Ahmed Mubarak}, \bibinfo{person}{Amna
+  Ahmed}, \bibinfo{person}{Amira Nasser}, \bibinfo{person}{Aya Mohamed},
+  \bibinfo{person}{Fares El-Sadek}, \bibinfo{person}{Mohammed Ahmed},
+  \bibinfo{person}{Ahmed Salah}, {and} \bibinfo{person}{Youssef Sobhy}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{QuesGenie: Intelligent Multimodal Question
+  Generation}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2509.03535}}
+  (\bibinfo{year}{2025}).
+\newblock
+
+
+\bibitem[Piehl et~al\mbox{.}(2025)]%
+        {piehl2025solving}
+\bibfield{author}{\bibinfo{person}{Mitchell Piehl}, \bibinfo{person}{Dillon
+  Wilson}, \bibinfo{person}{Ananya Kalita}, {and} \bibinfo{person}{Jugal
+  Kalita}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Solving Math Word Problems Using Estimation
+  Verification and Equation Generation}. In \bibinfo{booktitle}{\emph{2025
+  International Conference on Machine Learning and Applications (ICMLA)}}.
+  IEEE, \bibinfo{pages}{432--439}.
+\newblock
+
+
+\bibitem[Scaria et~al\mbox{.}(2024)]%
+        {scaria2024automated}
+\bibfield{author}{\bibinfo{person}{Nicy Scaria}, \bibinfo{person}{Suma
+  Dharani~Chenna}, {and} \bibinfo{person}{Deepak Subramani}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Automated educational question generation at
+  different bloom’s skill levels using large language models: Strategies and
+  evaluation}. In \bibinfo{booktitle}{\emph{International conference on
+  artificial intelligence in education}}. Springer, \bibinfo{pages}{165--179}.
+\newblock
+
+
+\bibitem[Schulman et~al\mbox{.}(2017)]%
+        {schulman2017proximal}
+\bibfield{author}{\bibinfo{person}{John Schulman}, \bibinfo{person}{Filip
+  Wolski}, \bibinfo{person}{Prafulla Dhariwal}, \bibinfo{person}{Alec Radford},
+  {and} \bibinfo{person}{Oleg Klimov}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Proximal policy optimization algorithms}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1707.06347}}
+  (\bibinfo{year}{2017}).
+\newblock
+
+
+\bibitem[Shao et~al\mbox{.}(2024)]%
+        {shao2024deepseekmath}
+\bibfield{author}{\bibinfo{person}{Zhihong Shao}, \bibinfo{person}{Peiyi Wang},
+  \bibinfo{person}{Qihao Zhu}, \bibinfo{person}{Runxin Xu},
+  \bibinfo{person}{Junxiao Song}, \bibinfo{person}{Xiao Bi},
+  \bibinfo{person}{Haowei Zhang}, \bibinfo{person}{Mingchuan Zhang},
+  \bibinfo{person}{YK Li}, \bibinfo{person}{Yang Wu}, {et~al\mbox{.}}}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Deepseekmath: Pushing the limits of mathematical
+  reasoning in open language models}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2402.03300}}
+  (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[Skalse et~al\mbox{.}(2022)]%
+        {skalse2022defining}
+\bibfield{author}{\bibinfo{person}{Joar Skalse}, \bibinfo{person}{Nikolaus H~R
+  Howe}, \bibinfo{person}{Dmitrii Krasheninnikov}, {and} \bibinfo{person}{David
+  Krueger}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Defining and characterizing reward hacking}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing
+  Systems}}, Vol.~\bibinfo{volume}{35}.
+\newblock
+
+
+\bibitem[Stamatellos(2025)]%
+        {stamatellos2025socratic}
+\bibfield{author}{\bibinfo{person}{Giannis Stamatellos}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Socratic Methodologies and Artificial Intelligence
+  against Disinformation: A Philosophical Approach}.
+\newblock \bibinfo{journal}{\emph{The International Journal of the Platonic
+  Tradition}} \bibinfo{volume}{19}, \bibinfo{number}{1} (\bibinfo{year}{2025}),
+  \bibinfo{pages}{95--102}.
+\newblock
+
+
+\bibitem[Wang et~al\mbox{.}(2020)]%
+        {wang2020answer}
+\bibfield{author}{\bibinfo{person}{Liuyin Wang}, \bibinfo{person}{Zihan Xu},
+  \bibinfo{person}{Zibo Lin}, \bibinfo{person}{Hai-Tao Zheng}, {and}
+  \bibinfo{person}{Ying Shen}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Answer-driven deep question generation based on
+  reinforcement learning}. In \bibinfo{booktitle}{\emph{Proceedings of the 28th
+  International Conference on Computational Linguistics}}.
+  \bibinfo{pages}{5159--5170}.
+\newblock
+
+
+\bibitem[Wood et~al\mbox{.}(1976)]%
+        {wood1976role}
+\bibfield{author}{\bibinfo{person}{David Wood}, \bibinfo{person}{Jerome~S
+  Bruner}, {and} \bibinfo{person}{Gail Ross}.} \bibinfo{year}{1976}\natexlab{}.
+\newblock \showarticletitle{The role of tutoring in problem solving}.
+\newblock \bibinfo{journal}{\emph{Journal of child psychology and psychiatry}}
+  \bibinfo{volume}{17}, \bibinfo{number}{2} (\bibinfo{year}{1976}),
+  \bibinfo{pages}{89--100}.
+\newblock
+
+
+\bibitem[Wood(1994)]%
+        {wood1994patterns}
+\bibfield{author}{\bibinfo{person}{Terry Wood}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Patterns of interaction and the culture of
+  mathematics classrooms}.
+\newblock In \bibinfo{booktitle}{\emph{Cultural perspectives on the mathematics
+  classroom}}. \bibinfo{publisher}{Springer}, \bibinfo{pages}{149--168}.
+\newblock
+
+
+\bibitem[Xi et~al\mbox{.}(2025)]%
+        {xi2025investigating}
+\bibfield{author}{\bibinfo{person}{Linjin Xi}, \bibinfo{person}{Yi Zhang},
+  {and} \bibinfo{person}{Qiyun Wang}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Investigating the effects of an LLM-based Socratic
+  conversational agent on students’ academic performance and reflective
+  thinking in higher education}.
+\newblock \bibinfo{journal}{\emph{Computers \& Education}}
+  (\bibinfo{year}{2025}), \bibinfo{pages}{105494}.
+\newblock
+
+
+\bibitem[Yang et~al\mbox{.}(2025)]%
+        {yang2025iterative}
+\bibfield{author}{\bibinfo{person}{Kaiqi Yang}, \bibinfo{person}{Hang Li},
+  \bibinfo{person}{Yucheng Chu}, \bibinfo{person}{Zitao Liu},
+  \bibinfo{person}{Mi Tian}, {and} \bibinfo{person}{Hui Liu}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Iterative LLM-Based Generation and Refinement of
+  Distracting Conditions in Math Word Problems}. In
+  \bibinfo{booktitle}{\emph{2025 IEEE International Conference on Teaching,
+  Assessment, and Learning for Engineering (TALE)}}. IEEE,
+  \bibinfo{pages}{1--8}.
+\newblock
+
+
+\bibitem[Zhang et~al\mbox{.}(2024)]%
+        {zhang2024mathverse}
+\bibfield{author}{\bibinfo{person}{Renrui Zhang}, \bibinfo{person}{Dongzhi
+  Jiang}, \bibinfo{person}{Yichi Zhang}, \bibinfo{person}{Haokun Lin},
+  \bibinfo{person}{Ziyu Guo}, \bibinfo{person}{Pengshuo Qiu},
+  \bibinfo{person}{Aojun Zhou}, \bibinfo{person}{Pan Lu},
+  \bibinfo{person}{Kai-Wei Chang}, \bibinfo{person}{Yu Qiao}, {et~al\mbox{.}}}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Mathverse: Does your multi-modal llm truly see the
+  diagrams in visual math problems?}. In \bibinfo{booktitle}{\emph{European
+  Conference on Computer Vision}}. Springer, \bibinfo{pages}{169--186}.
+\newblock
+
+
+\end{thebibliography}
