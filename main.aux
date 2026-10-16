@@ -163,33 +163,32 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Training Hyperparameters}{9}{subsection.6.1}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Graph-CPO training hyperparameters.}}{9}{table.caption.33}\protected@file@percent }
 \newlabel{tab:hyperparams}{{10}{9}{Graph-CPO training hyperparameters}{table.caption.33}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Graph-CPO training hyperparameters (continued).}}{9}{table.caption.34}\protected@file@percent }
-\newlabel{tab:hyperparams_cont}{{11}{9}{Graph-CPO training hyperparameters (continued)}{table.caption.34}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Computational cost comparison. GPU-h is total training cost on 4 A100-40GB GPUs: the SFT row is measured over 50 SFT epochs and the RL rows over 50 RL epochs; the 3-epoch warm-start initialization adds about 20 GPU-h. Lat. denotes average generation time per problem.}}{10}{table.caption.35}\protected@file@percent }
-\newlabel{tab:cost_analysis}{{12}{10}{Computational cost comparison. GPU-h is total training cost on 4 A100-40GB GPUs: the SFT row is measured over 50 SFT epochs and the RL rows over 50 RL epochs; the 3-epoch warm-start initialization adds about 20 GPU-h. Lat. denotes average generation time per problem}{table.caption.35}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Computational Cost Analysis}{10}{subsection.6.2}\protected@file@percent }
-\newlabel{sec:cost_app}{{6.2}{10}{Computational Cost Analysis}{subsection.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Computational Cost Analysis}{9}{subsection.6.2}\protected@file@percent }
+\newlabel{sec:cost_app}{{6.2}{9}{Computational Cost Analysis}{subsection.6.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Computational cost comparison. GPU-h is total training cost on 4 A100-40GB GPUs: the SFT row is measured over 50 SFT epochs and the RL rows over 50 RL epochs; the 3-epoch warm-start initialization adds about 20 GPU-h. Lat. denotes average generation time per problem.}}{10}{table.caption.34}\protected@file@percent }
+\newlabel{tab:cost_analysis}{{11}{10}{Computational cost comparison. GPU-h is total training cost on 4 A100-40GB GPUs: the SFT row is measured over 50 SFT epochs and the RL rows over 50 RL epochs; the 3-epoch warm-start initialization adds about 20 GPU-h. Lat. denotes average generation time per problem}{table.caption.34}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Training Rewards Comparison}{10}{subsection.6.3}\protected@file@percent }
 \newlabel{sec:training_curves}{{6.3}{10}{Training Rewards Comparison}{subsection.6.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Ablation of Graph-CPO reward dimensions on MathQA. DW denotes dynamic reward weighting. All variants use the same Qwen3-32B backbone and graph-conditioned action frames.}}{10}{table.caption.37}\protected@file@percent }
-\newlabel{tab:reward_ablation}{{13}{10}{Ablation of Graph-CPO reward dimensions on MathQA. DW denotes dynamic reward weighting. All variants use the same Qwen3-32B backbone and graph-conditioned action frames}{table.caption.37}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Ablation of Graph-CPO reward dimensions on MathQA. DW denotes dynamic reward weighting. All variants use the same Qwen3-32B backbone and graph-conditioned action frames.}}{10}{table.caption.36}\protected@file@percent }
+\newlabel{tab:reward_ablation}{{12}{10}{Ablation of Graph-CPO reward dimensions on MathQA. DW denotes dynamic reward weighting. All variants use the same Qwen3-32B backbone and graph-conditioned action frames}{table.caption.36}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {6.4}End-to-End Example: From Problem to Socratic Questions}{10}{subsection.6.4}\protected@file@percent }
 \newlabel{app:example}{{6.4}{10}{End-to-End Example: From Problem to Socratic Questions}{subsection.6.4}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.1}Input Problem}{10}{subsubsection.6.4.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.2}Phase 1: Graph Construction}{10}{subsubsection.6.4.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3}Phase 2: Warm-Start Initialization}{10}{subsubsection.6.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Training behavior of GRPO and Graph-CPO across Contrastive Relevance, Format Adherence, and Logical Coherence rewards on Qwen3-32B.}}{11}{figure.caption.36}\protected@file@percent }
-\newlabel{fig:training_comparison}{{4}{11}{Training behavior of GRPO and Graph-CPO across Contrastive Relevance, Format Adherence, and Logical Coherence rewards on Qwen3-32B}{figure.caption.36}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Semantic Dependency Graph of the running example expressed as prerequisite edges (prerequisite $\rightarrow $ dependent).}}{11}{figure.caption.38}\protected@file@percent }
-\newlabel{fig:example_dag}{{5}{11}{Semantic Dependency Graph of the running example expressed as prerequisite edges (prerequisite $\rightarrow $ dependent)}{figure.caption.38}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4}Phase 3: Graph-CPO Sequential Generation}{11}{subsubsection.6.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Key mechanisms:}{11}{section*.40}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.5}Comparison with Baseline Methods}{11}{table.caption.41}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Qualitative comparison with the baseline.}{11}{section*.42}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Qualitative comparison of generated Socratic sub-questions.}}{11}{table.caption.43}\protected@file@percent }
-\newlabel{tab:qual_example}{{16}{11}{Qualitative comparison of generated Socratic sub-questions}{table.caption.43}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4}Phase 3: Graph-CPO Sequential Generation}{10}{subsubsection.6.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Training behavior of GRPO and Graph-CPO across Contrastive Relevance, Format Adherence, and Logical Coherence rewards on Qwen3-32B.}}{11}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:training_comparison}{{4}{11}{Training behavior of GRPO and Graph-CPO across Contrastive Relevance, Format Adherence, and Logical Coherence rewards on Qwen3-32B}{figure.caption.35}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Graph-CPO generation trace showing frontier evolution and targeted questions.}}{11}{table.caption.38}\protected@file@percent }
+\newlabel{tab:example_generation}{{13}{11}{Graph-CPO generation trace showing frontier evolution and targeted questions}{table.caption.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Semantic Dependency Graph of the running example expressed as prerequisite edges (prerequisite $\rightarrow $ dependent).}}{11}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:example_dag}{{5}{11}{Semantic Dependency Graph of the running example expressed as prerequisite edges (prerequisite $\rightarrow $ dependent)}{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {paragraph}{Key mechanisms:}{11}{section*.39}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.5}Comparison with Baseline Methods}{11}{table.caption.40}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Qualitative comparison with the baseline.}{11}{section*.41}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Qualitative comparison of generated Socratic sub-questions.}}{11}{table.caption.42}\protected@file@percent }
+\newlabel{tab:qual_example}{{15}{11}{Qualitative comparison of generated Socratic sub-questions}{table.caption.42}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.6}Reward Dynamics During Training}{11}{subsubsection.6.4.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}Limitations}{11}{section.7}\protected@file@percent }
 \newlabel{tocindent-1}{0pt}
 \newlabel{tocindent0}{0pt}
 \newlabel{tocindent1}{4.185pt}
@@ -197,9 +196,8 @@
 \newlabel{tocindent3}{16.51498pt}
 \newlabel{tocindent4}{0pt}
 \newlabel{tocindent5}{0pt}
-\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Graph-CPO generation trace showing frontier evolution and targeted questions.}}{12}{table.caption.39}\protected@file@percent }
-\newlabel{tab:example_generation}{{14}{12}{Graph-CPO generation trace showing frontier evolution and targeted questions}{table.caption.39}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces Question sequences generated by different methods for the same problem.}}{12}{table.caption.41}\protected@file@percent }
-\newlabel{tab:example_comparison}{{15}{12}{Question sequences generated by different methods for the same problem}{table.caption.41}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Question sequences generated by different methods for the same problem.}}{12}{table.caption.40}\protected@file@percent }
+\newlabel{tab:example_comparison}{{14}{12}{Question sequences generated by different methods for the same problem}{table.caption.40}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Limitations}{12}{section.7}\protected@file@percent }
 \newlabel{TotPages}{{12}{12}{}{page.12}{}}
 \gdef \@abspage@last{12}

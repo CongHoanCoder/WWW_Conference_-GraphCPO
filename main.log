@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.9)  16 OCT 2026 00:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.9)  16 OCT 2026 01:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1236,7 +1236,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6.6]
 [7.7]
-<01.Figures/radar_comparison_chart.pdf, id=403, 649.66304pt x 586.82555pt>
+<01.Figures/radar_comparison_chart.pdf, id=401, 649.66304pt x 586.82555pt>
 File: 01.Figures/radar_comparison_chart.pdf Graphic file (type pdf)
 <use 01.Figures/radar_comparison_chart.pdf>
 Package pdftex.def Info: 01.Figures/radar_comparison_chart.pdf  used on input l
@@ -1247,20 +1247,20 @@ ine 818.
 Class acmart Warning: A possible image without description on input line 821.
 
 (./main.bbl [8.8 <./01.Figures/radar_comparison_chart.pdf>]) [9.9]
-<01.Figures/complete_training_metrics_analysis.pdf, id=480, 504.04475pt x 141.4
+<01.Figures/complete_training_metrics_analysis.pdf, id=478, 504.04475pt x 141.4
 3779pt>
 File: 01.Figures/complete_training_metrics_analysis.pdf Graphic file (type pdf)
 
 <use 01.Figures/complete_training_metrics_analysis.pdf>
 Package pdftex.def Info: 01.Figures/complete_training_metrics_analysis.pdf  use
-d on input line 942.
+d on input line 930.
 (pdftex.def)             Requested size: 405.03754pt x 113.65753pt.
 
 
-Class acmart Warning: A possible image without description on input line 945.
+Class acmart Warning: A possible image without description on input line 933.
 
 
-Underfull \hbox (badness 2591) in paragraph at lines 956--956
+Underfull \hbox (badness 2591) in paragraph at lines 944--944
 \T1/LinuxLibertineT-TLF/b/n/9 (+20) MathQA. DW de-notes dy-namic re-ward weight
 -ing. All
  []
@@ -1269,40 +1269,43 @@ Underfull \hbox (badness 2591) in paragraph at lines 956--956
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 8.0pt on input line 1003.
+(Font)              scaled to size 8.0pt on input line 991.
 
 
-Class acmart Warning: A possible image without description on input line 1015.
+Class acmart Warning: A possible image without description on input line 1003.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [10.10]
-Underfull \hbox (badness 10000) in paragraph at lines 1133--1133
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
 []|\T1/LinuxLibertineT-TLF/m/n/7 (+20) What is the story
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1133--1133
+Underfull \hbox (badness 1728) in paragraph at lines 1121--1121
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) tal be-fore giv-ing any
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1133--1133
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) tal, what cal-cu-la-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1133--1133
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) rep-re-sents giv-ing 4
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 1133--1133
+Underfull \hbox (badness 1354) in paragraph at lines 1121--1121
 []|\T1/LinuxLibertineT-TLF/m/n/7 (+20) What is the fi-nal an-
  []
 
-[11.11 <./01.Figures/complete_training_metrics_analysis.pdf>]
+
+Underfull \vbox (badness 1454) has occurred while \output is active []
+
+ [11.11 <./01.Figures/complete_training_metrics_analysis.pdf>]
 
 Class acmart Warning: Some images may lack descriptions.
 (acmart)              ACM is committed to complying with the upcoming US ADA ht
@@ -1317,10 +1320,6 @@ bility practices to maintain compliance with evolving standards.
 portant to optimize color contrast for the visually impaired. Taking these impo
 rtant steps when creating your papers will ensure that the widest possible audi
 ence can ingest your work..
-
-
-Overfull \vbox (1.624pt too high) has occurred while \output is active []
-
 
 (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
@@ -1337,10 +1336,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 26A48DC53B04816D632218BAF75F7B3E;3994.
  ) 
 Here is how much of TeX's memory you used:
- 22245 strings out of 467525
- 366553 string characters out of 5418983
- 863945 words of memory out of 5000000
- 49620 multiletter control sequences out of 15000+600000
+ 22243 strings out of 467525
+ 366515 string characters out of 5418983
+ 863407 words of memory out of 5000000
+ 49619 multiletter control sequences out of 15000+600000
  906536 words of font info for 683 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  90i,17n,131p,1287b,812s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1365,10 +1364,10 @@ mf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2026/texmf-dist/
 fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2026/texmf-dist/fonts/t
 ype1/public/newtx/txsym.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/pub
 lic/newtx/txsys.pfb>
-Output written on main.pdf (12 pages, 1175446 bytes).
+Output written on main.pdf (12 pages, 1175546 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
- 496 compressed objects within 5 object streams
- 149 named destinations out of 1000 (max. 500000)
+ 716 PDF objects out of 1000 (max. 8388607)
+ 494 compressed objects within 5 object streams
+ 148 named destinations out of 1000 (max. 500000)
  159941 words of extra memory for PDF output out of 184870 (max. 10000000)
 

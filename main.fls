@@ -548,12 +548,6 @@ INPUT ./01.Figures/complete_training_metrics_analysis.pdf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-4.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-ot1.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-ot1.tfm
-INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
-INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-utf8.def
-INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-utf8.def
-INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-utf8.def
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/public/newtx/nxlmi7.vf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/newtx/LibertineMathMI7.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/newtx/NewTXMI7.tfm
@@ -569,6 +563,12 @@ INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/newtx/txsys.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ot1.vf
 INPUT /usr/local/texlive/2026/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ot1--base.tfm
+INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-utf8.def
+INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-utf8.def
+INPUT /usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-utf8.def
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
