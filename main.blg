@@ -12,8 +12,6 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Warning--empty publisher in achiam2017cpo
-Warning--empty address in achiam2017cpo
 Warning--empty publisher in ang2023socratic
 Warning--empty address in ang2023socratic
 Warning--empty publisher in biancini2024multiple
@@ -78,45 +76,45 @@ Warning--empty publisher in yang2025iterative
 Warning--empty address in yang2025iterative
 Warning--empty publisher in zhang2024mathverse
 Warning--empty address in zhang2024mathverse
-You've used 38 entries,
+You've used 37 entries,
             6273 wiz_defined-function locations,
-            1879 strings with 29743 characters,
-and the built_in function-call counts, 48364 in all, are:
-= -- 5921
-> -- 1862
+            1875 strings with 29628 characters,
+and the built_in function-call counts, 47151 in all, are:
+= -- 5794
+> -- 1823
 < -- 0
-+ -- 639
-- -- 615
-* -- 3597
-:= -- 4692
-add.period$ -- 190
-call.type$ -- 38
-change.case$ -- 344
-chr.to.int$ -- 38
-cite$ -- 104
-duplicate$ -- 4235
-empty$ -- 2947
-format.name$ -- 759
-if$ -- 11878
++ -- 626
+- -- 603
+* -- 3511
+:= -- 4578
+add.period$ -- 185
+call.type$ -- 37
+change.case$ -- 336
+chr.to.int$ -- 37
+cite$ -- 101
+duplicate$ -- 4114
+empty$ -- 2863
+format.name$ -- 743
+if$ -- 11587
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 171
-newline$ -- 321
-num.names$ -- 266
-pop$ -- 1869
+missing$ -- 166
+newline$ -- 314
+num.names$ -- 259
+pop$ -- 1814
 preamble$ -- 1
-purify$ -- 648
+purify$ -- 632
 quote$ -- 0
-skip$ -- 1548
+skip$ -- 1503
 stack$ -- 0
-substring$ -- 3300
-swap$ -- 429
+substring$ -- 3211
+swap$ -- 418
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 930
-warning$ -- 66
-while$ -- 207
+type$ -- 900
+warning$ -- 64
+while$ -- 201
 width$ -- 0
-write$ -- 746
-(There were 66 warnings)
+write$ -- 727
+(There were 64 warnings)

@@ -372,7 +372,7 @@ where $P_{\text{Dec}}(\cdot)$ denotes the decoder-defined conditional probabilit
 \subsection{Graph-CPO: Graph-Grounded Contrastive Pedagogical Optimization}
 \label{sec:cpo}
 
-Supervised warm-starting makes the generator fluent, but it does not directly optimize long-horizon pedagogical utility. We therefore introduce \textbf{Graph-CPO}, a GRPO-style policy optimization method \cite{shao2024deepseekmath} that differs from scalar GRPO in two ways: rewards are first normalized independently by pedagogical dimension, and then combined through a curriculum-based weighting schedule. This prevents easy objectives, such as format adherence, from dominating harder graph-grounded reasoning signals. (Here, CPO denotes \emph{Contrastive Pedagogical Optimization}; it is unrelated to Constrained Policy Optimization \cite{achiam2017cpo}.)
+Supervised warm-starting makes the generator fluent, but it does not directly optimize long-horizon pedagogical utility. We therefore introduce \textbf{Graph-CPO}, a GRPO-style policy optimization method \cite{shao2024deepseekmath} that differs from scalar GRPO in two ways: rewards are first normalized independently by pedagogical dimension, and then combined through a curriculum-based weighting schedule. This prevents easy objectives, such as format adherence, from dominating harder graph-grounded reasoning signals.
 
 \paragraph{Graph-conditioned supervised anchor.}
 Given the action frame $z_t$ and graph prefix $\mathbf{p}_t$ from Section~\ref{sec:g2q}, we retain a supervised anchoring loss:
@@ -552,7 +552,7 @@ The final loss combines supervised anchoring and Graph-CPO:
 (1-\alpha(u))\mathcal{L}_{\mathrm{CPO}},
 \label{eq:total_loss}
 \end{equation}
-where $\alpha(u)=\alpha_{\min}+(\alpha_0-\alpha_{\min})e^{-\lambda_\alpha u}$ decays monotonically from $\alpha_0$ to $\alpha_{\min}$ with training (Appendix Table~\ref{tab:hyperparams}). Early updates remain close to the teacher trajectory, while later updates are increasingly driven by graph-grounded pedagogical rewards.
+where $\alpha(u)=\alpha_{\min}+(\alpha_0-\alpha_{\min})e^{-\lambda_\alpha u}$ decays monotonically from $\alpha_0$ to $\alpha_{\min}$ with training (Appendix Table~\ref{tab:hyperparams_cont}). Early updates remain close to the teacher trajectory, while later updates are increasingly driven by graph-grounded pedagogical rewards.
 
 
 \section{Experiments and Results}
@@ -560,7 +560,7 @@ where $\alpha(u)=\alpha_{\min}+(\alpha_0-\alpha_{\min})e^{-\lambda_\alpha u}$ de
 \subsection{Experiment Setups}
 
 \subsubsection{Datasets, Implementation, and Baselines}
-We evaluate Graph-CPO on GSM8K~\cite{cobbe2021training}, MathQA~\cite{majumder2019mathqa}, OlympiadBench~\cite{he2024olympiadbench}, and AIME. Unless otherwise stated, all controlled experiments use \textbf{Qwen3-32B} as the backbone. Because full-parameter training of a 32B model does not fit into the memory budget of 40~GB GPUs, we train with LoRA (rank 64, scaling 128, dropout 0.05, applied to attention and MLP projection layers; about 190M trainable parameters) together with the 8-bit Adam optimizer. The supervised warm-start runs for 3 epochs; the Graph-CPO RL phase runs for 50 epochs with periodic validation, all on 4 NVIDIA A100-40GB GPUs. We provide full hyperparameters in Appendix Table~\ref{tab:hyperparams}.
+We evaluate Graph-CPO on GSM8K~\cite{cobbe2021training}, MathQA~\cite{majumder2019mathqa}, OlympiadBench~\cite{he2024olympiadbench}, and AIME. Unless otherwise stated, all controlled experiments use \textbf{Qwen3-32B} as the backbone. We train with LoRA (rank 64, scaling 128, dropout 0.05, applied to attention and MLP projection layers; about 190M trainable parameters) together with the 8-bit Adam optimizer. The supervised warm-start runs for 3 epochs; the Graph-CPO RL phase runs for 50 epochs with periodic validation, all on 4 NVIDIA A100-40GB GPUs. We provide full hyperparameters in Appendix Tables~\ref{tab:hyperparams} and~\ref{tab:hyperparams_cont}.
 
 
 We compare against three groups of baselines: \textbf{(i)} open-source educational QG frameworks, including SoQG~\cite{ang2023socratic}, BloomLLM~\cite{duong2024bloomllm}, and Automated Educational QG~\cite{scaria2024automated}; \textbf{(ii)} distilled reasoning models, including DeepSeek-R1-Distill-Llama-8B in a zero-shot setting; and \textbf{(iii)} commercial generators, including Gemini-2.5-Pro, GPT-5, Grok-4, and Claude-4.1-Opus. These baselines test both controlled backbone-level improvements and performance relative to stronger external generators.
@@ -662,7 +662,7 @@ Graph-CPO optimization itself.
 \footnotesize
 \caption{Comparison under Protocol B (downstream fine-tuning). Superscripts denote point changes vs.\ the Qwen3-32B generator baseline. Non-Qwen3-32B generators are included for reference and may reflect both generator design and backbone.}
 \label{tab:benchmark-comparison-detailed}
-\vspace{-3mm}
+
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lccccc}
 \toprule
  & \multicolumn{4}{c}{\textbf{Benchmark Datasets}} & \textbf{Avg.} \\
@@ -875,6 +875,18 @@ Batch size & 16 per GPU \\
 Gradient accumulation & 4 steps \\
 Warm-up steps & 500 \\
 Epochs & 3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\centering
+\footnotesize
+\caption{Graph-CPO training hyperparameters (continued).}
+\label{tab:hyperparams_cont}
+\begin{tabular}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
 \midrule
 \multicolumn{2}{l}{\textit{Graph-CPO RL Training (Section 3.4)}} \\
 Learning rate & 1e-5 \\

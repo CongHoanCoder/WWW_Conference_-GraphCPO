@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.9)  16 OCT 2026 00:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.6.9)  16 OCT 2026 00:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1199,15 +1199,16 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.6pt on input line 343.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 5.5pt on input line 343.
- [4.4{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.en
-c}]
+
 Underfull \hbox (badness 10000) in paragraph at lines 408--409
 []|\T1/LinuxLibertineT-TLF/m/n/6 (+20) Targetedness / non-
  []
 
+[4.4{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc
+}]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 563.
-[5.5]
+ [5.5]
 Underfull \hbox (badness 10000) in paragraph at lines 640--640
 []|\T1/LinuxLibertineT-TLF/m/n/9 (+20) BERT node
  []
@@ -1234,9 +1235,7 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/sl' will be
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6.6]
-Underfull \vbox (badness 1199) has occurred while \output is active []
-
- [7.7]
+[7.7]
 <01.Figures/radar_comparison_chart.pdf, id=403, 649.66304pt x 586.82555pt>
 File: 01.Figures/radar_comparison_chart.pdf Graphic file (type pdf)
 <use 01.Figures/radar_comparison_chart.pdf>
@@ -1247,66 +1246,59 @@ ine 818.
 
 Class acmart Warning: A possible image without description on input line 821.
 
-(./main.bbl
-Underfull \vbox (badness 3977) has occurred while \output is active []
-
- [8.8 <./01.Figures/radar_comparison_chart.pdf>])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9.9]
+(./main.bbl [8.8 <./01.Figures/radar_comparison_chart.pdf>]) [9.9]
 <01.Figures/complete_training_metrics_analysis.pdf, id=480, 504.04475pt x 141.4
 3779pt>
 File: 01.Figures/complete_training_metrics_analysis.pdf Graphic file (type pdf)
 
 <use 01.Figures/complete_training_metrics_analysis.pdf>
 Package pdftex.def Info: 01.Figures/complete_training_metrics_analysis.pdf  use
-d on input line 930.
+d on input line 942.
 (pdftex.def)             Requested size: 405.03754pt x 113.65753pt.
 
 
-Class acmart Warning: A possible image without description on input line 933.
+Class acmart Warning: A possible image without description on input line 945.
 
 
-Underfull \vbox (badness 2635) has occurred while \output is active []
-
-
-Underfull \hbox (badness 2591) in paragraph at lines 944--944
+Underfull \hbox (badness 2591) in paragraph at lines 956--956
 \T1/LinuxLibertineT-TLF/b/n/9 (+20) MathQA. DW de-notes dy-namic re-ward weight
 -ing. All
  []
 
 
-Underfull \vbox (badness 4595) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10.10]
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 8.0pt on input line 991.
+(Font)              scaled to size 8.0pt on input line 1003.
 
 
-Class acmart Warning: A possible image without description on input line 1003.
+Class acmart Warning: A possible image without description on input line 1015.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10.10]
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1133
 []|\T1/LinuxLibertineT-TLF/m/n/7 (+20) What is the story
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 1121--1121
+Underfull \hbox (badness 1728) in paragraph at lines 1133--1133
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) tal be-fore giv-ing any
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1133
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) tal, what cal-cu-la-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1121--1121
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1133
 \T1/LinuxLibertineT-TLF/m/n/7 (+20) rep-re-sents giv-ing 4
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 1121--1121
+Underfull \hbox (badness 1354) in paragraph at lines 1133--1133
 []|\T1/LinuxLibertineT-TLF/m/n/7 (+20) What is the fi-nal an-
  []
 
@@ -1327,8 +1319,8 @@ rtant steps when creating your papers will ensure that the widest possible audi
 ence can ingest your work..
 
 
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
+Overfull \vbox (1.624pt too high) has occurred while \output is active []
+
 
 (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
@@ -1345,13 +1337,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 26A48DC53B04816D632218BAF75F7B3E;3994.
  ) 
 Here is how much of TeX's memory you used:
- 22250 strings out of 467525
- 366668 string characters out of 5418983
- 860839 words of memory out of 5000000
- 49622 multiletter control sequences out of 15000+600000
- 906809 words of font info for 685 fonts, out of 8000000 for 9000
+ 22245 strings out of 467525
+ 366553 string characters out of 5418983
+ 863945 words of memory out of 5000000
+ 49620 multiletter control sequences out of 15000+600000
+ 906536 words of font info for 683 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 90i,17n,131p,1287b,810s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,131p,1287b,812s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/inconsolata/Inconsolat
 a-zi4r.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/Liberti
 neMathMI.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newtx/Liber
@@ -1373,7 +1365,7 @@ mf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2026/texmf-dist/
 fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2026/texmf-dist/fonts/t
 ype1/public/newtx/txsym.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/pub
 lic/newtx/txsys.pfb>
-Output written on main.pdf (12 pages, 1175731 bytes).
+Output written on main.pdf (12 pages, 1175446 bytes).
 PDF statistics:
  718 PDF objects out of 1000 (max. 8388607)
  496 compressed objects within 5 object streams

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1792124863.8233 "main.aux" "main.bbl" "main" 1792124866.60725 0
+["bibtex main"] 1792126546.64673 "main.aux" "main.bbl" "main" 1792126548.71439 0
   "./ACM-Reference-Format.bst" 1792123974.03742 93560 7091f2b0543d2c8bfe2e82ce5d54a029 ""
   "./sample-base.bib" 1792123974.68395 65559 dcd47c75bf21c748310a9980657978e2 ""
-  "main.aux" 1792124865.87658 22452 5cb88909a55803894c0ab4bfe6043787 "pdflatex"
+  "main.aux" 1792126548.16082 22632 1ec0fa7be2f4fe33ecfc88a30571d259 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1792124864.00736 "main.tex" "main.pdf" "main" 1792124866.60753 0
+["pdflatex"] 1792126546.79167 "main.tex" "main.pdf" "main" 1792126548.71462 0
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc" 1558214095 7693 0f2dce6d313c82989ec3a67fc24df2a0 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc" 1490131464 2921 8ca0eb0831f9bc5da080d3697cfe67bf ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1490131464 2933 9ad527ce78d7c5fa0a642dead095f172 ""
@@ -243,10 +243,10 @@
   "01.Figures/complete_training_metrics_analysis.pdf" 1792123977.8756 52320 eda9aaec10e614cb61b0757435dcce7e ""
   "01.Figures/radar_comparison_chart.pdf" 1792123976.74257 24766 ce8d4c3ac314d66d928744dd27dafe52 ""
   "acmart.cls" 1792123974.27053 121737 e553f62fc9642f9010f9c29ba27de8d5 ""
-  "main.aux" 1792124865.87658 22452 5cb88909a55803894c0ab4bfe6043787 "pdflatex"
-  "main.bbl" 1792124864.0022 22856 ab455a6feb3c60a1f418cbf115673f0d "bibtex main"
-  "main.out" 1792124865.87948 3994 26a48dc53b04816d632218baf75f7b3e "pdflatex"
-  "main.tex" 1792124846.1867 70521 1d6e040afc165703b0827c4b85646d5b ""
+  "main.aux" 1792126548.16082 22632 1ec0fa7be2f4fe33ecfc88a30571d259 "pdflatex"
+  "main.bbl" 1792126546.78768 22420 5dcfff019844ace8168aaaede0b8e8f5 "bibtex main"
+  "main.out" 1792126548.16225 3994 26a48dc53b04816d632218baf75f7b3e "pdflatex"
+  "main.tex" 1792126529.3687 70547 413726266f8de7ebd5cc2ec5462b027b ""
   (generated)
   "main.aux"
   "main.log"

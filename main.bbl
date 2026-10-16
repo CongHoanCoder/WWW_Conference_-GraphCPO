@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{38}
+\begin{thebibliography}{37}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -35,17 +35,6 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
-
-\bibitem[Achiam et~al\mbox{.}(2017)]%
-        {achiam2017cpo}
-\bibfield{author}{\bibinfo{person}{Joshua Achiam}, \bibinfo{person}{David
-  Held}, \bibinfo{person}{Aviv Tamar}, {and} \bibinfo{person}{Pieter Abbeel}.}
-  \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{Constrained policy optimization}. In
-  \bibinfo{booktitle}{\emph{International Conference on Machine Learning}}.
-  PMLR, \bibinfo{pages}{22--31}.
-\newblock
-
 
 \bibitem[Adewumi et~al\mbox{.}(2026)]%
         {adewumi2026findings}
